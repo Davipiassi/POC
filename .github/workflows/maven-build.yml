@@ -22,7 +22,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package -DskipTests --file pom.xml
 
-      - name: Deploy EC2
+      - name: Deploy AWS EC2
         run: |
            echo "${{secrets.KEY_EC2}}" >private_key && chmod 400 private_key
            ssh -o StrictHostKeyChecking=no -i "private_key" ubuntu@ec2-3-215-148-236.compute-1.amazonaws.com"
