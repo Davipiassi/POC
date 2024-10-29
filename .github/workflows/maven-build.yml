@@ -1,4 +1,4 @@
-name: CI /CD - UBOI POC
+name: CI /CD - UBOI POC TEST
 
 on:
   push:
